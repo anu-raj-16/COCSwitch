@@ -1,21 +1,21 @@
 .hamburger {
     width: 2rem;
-    height: 2rem;
+    height: 1.5rem;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
     z-index: 10;
-}
-
-.hamburger:hover {
-    color: black
+    cursor: pointer;
 }
 
 .line {
-    width: 2rem;
-    height: 0.25rem;
+    width: 1.5rem;
+    height: 0.2rem;
     border-radius: 10px;
-    background-color: lightblue;
-    transform-origin: 1px;
+    background-color: grey;
     transition: all 0.3s linear;
+}
+
+.hamburger:hover .line {
+    background-color: black;
 }
