@@ -24,7 +24,7 @@ function get_nausea_switch(pt_med_name) {
 
   // return -1 if no eligible option exists
   if (first_meds.length === 0) {
-    return -1;
+    return undefined;
     }
 
   }
@@ -56,7 +56,7 @@ function get_vasomotor_switch(pt_med_name) {
 
   // return -1 if no eligible option exists
   if (first_meds.length === 0) {
-    return -1;
+    return undefined;
     }
 }
 
@@ -87,7 +87,7 @@ function get_weight_fatigue_switch(pt_med_name) {
 
   // return -1 if no eligible option exists
   if (first_meds.length === 0) {
-    return -1;
+    return undefined;
     }
 }
 
@@ -118,7 +118,7 @@ function get_bloating_switch(pt_med_name) {
 
   // return -1 if no eligible option exists
   if (first_meds.length === 0) {
-    return -1;
+    return undefined;
     }
 }
 

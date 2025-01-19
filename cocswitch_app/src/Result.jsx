@@ -16,10 +16,10 @@ function Result() {
     }
 
     // Set the result based on the passed data
-    if (result_med !== -1) {
-      setResult(`The medication to switch to is: ${result_med}`);
-    } else {
+    if (result_med == "-1") {
       setResult("There is currently no suitable COC replacement");
+    } else {
+      setResult(`The medication to switch to is: ${result_med}`);
     }
   }, [result_med, navigate]);
 
