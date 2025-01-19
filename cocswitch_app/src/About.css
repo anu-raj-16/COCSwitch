@@ -1,0 +1,92 @@
+.body {
+    margin: 0;
+    font-family: 'Istok Web', sans-serif;
+    background-color: #5bcad8;
+    background-size: cover;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.h1 {
+    margin: 0.3em;
+    font-size: 3em;
+}
+
+.h2 {
+    margin-bottom: 0 em;
+}
+
+.title {
+    font: 1em arial;
+    text-align: center;
+    color: #081F5C;
+}
+
+.timeline {
+    max-width: 90%;
+    margin: 2em auto;
+    position: relative;
+}
+
+.checkpoint {
+    position: relative;
+    width: 50%;
+    padding: 2em 3em;
+    left: 25%;
+}
+
+.checkpoint div {
+    background-color: #D2DCEB;
+    border-radius: 1em;
+    padding: 1em;
+    position: relative;
+}
+
+.checkpoint p {
+    line-height: 1em;
+    color: #081F5C;
+}
+
+.checkpoint:nth-child {
+    left: 60%;
+    text-align: left;
+}
+
+
+.checkpoint::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 2px;
+    height: 100%;
+    padding-right: 3px;
+    background-color: #007887;
+    transform: translateY(-50%);
+}
+
+.checkpoint::before {
+    left: 1em;
+}
+
+
+.checkpoint div::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    background-color: #007887;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0 0.5em #D2DCEB;
+    padding: 5px;
+}
+
+.checkpoint div::before {
+    left: -2.5em;
+    /* Dot alignment for odd checkpoints */
+}

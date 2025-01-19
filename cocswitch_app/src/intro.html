@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head> 
+<title>landing page</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=vPLotRZ5NdhSKsTVRDwvnQRZ1fKYzlx6TAd7QyW27vMJAEax_NMfm3f0S48YRsGWgn95-OiFsvlehE7k_-Lu6kv5zy7lDtmw15wG2MxRyWgijVH6bTGyzPf11Pb4Cx7qArczlzXPI4pn1LxmEhawxzNQZPVf0lIHQaU1N_b-yA0_nVWDG8xOR3WUsQIGTO4piUIud-Gk5Y3aSP567sLjZKtqFvUbo-XdO00Anfjom1um110pwAtIrwndtus2Ai3s2r5FWhzS_DkiEDiAaOTj0w" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvMTMyODYwODQ5NTY5OTc1OTExNC8xMzMwNDY0NjY3MDQyMDU4MjYzL2ludHJvLmh0bWw_ZXg9Njc4ZTEzNDcmaXM9Njc4Y2MxYzcmaG09NTk2OGQzYmRiNDhmMmFlNGNhODQ5NDEwNWYwZDVmMTIzMTg1ZDAxZjBhZWFkMjdlYjE0YTA4OTRmY2VhNmE3ZSY"/></head>
+<body>
+<section> 
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+</section>
+<div class="content" style="text-align: left;">
+    <div class="info">
+        <h2><em>COC.switch: Empowering Pharmacists, Improving Women's Health</em></h2>
+        <p>At COC.switch, we understand that every woman’s health journey is unique, <br>and finding the right birth control option shouldn’t be a challenge. Too often,<br> pharmacists face the daunting task of helping patients navigate the maze of <br>medications and symptoms, all while dealing with time constraints.<br> This is where we step in.<br>
+
+        Our innovative tool is designed to support pharmacists in quickly and accurately <br>finding the best birth control alternatives for their patients. By analyzing symptoms <br>and medications, COC.switch delivers recommendations that are tailored to the individual,<br> empowering pharmacists to provide better care and women to experience fewer side effects.<br>
+            
+        With COC.switch, we’re not just streamlining a process, we’re enhancing lives.<br> We believe that personalized, efficient healthcare should be accessible to everyone,<br> and we’re committed to helping pharmacists provide the care that every woman deserves
+    </div>
+</div>
+<div class="img"></div>
+
+
+
+    <style>
+        body{
+            margin: 0;
+            font: 1em sans-serif;
+            background-color: #81d5e0; 
+            background-size: cover;
+            padding: 0;
+        }
+        
+        .content, .info {
+            position: relative;
+            text-align: left;
+            margin-top: -80vh; 
+            margin-left: 10vh;
+            z-index: 2000; 
+            color: #081F5C;
+        }
+        .img{
+            background-image: url('doc.png');
+            background-size: 27%; /* 27% of container width */
+            background-repeat: no-repeat; 
+            background-position: right top; 
+            margin-top: -50vh; 
+            margin-left: -15vh;
+            height: 100vh;
+            width: 100%; 
+            position: relative;
+            z-index: 1000;
+        }
+        section{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        section .wave{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url('wave.png');
+            background-size: 1000px 100px;
+        }
+        section .wave.wave1{
+            animation: animate 30s linear infinite;
+            opacity: 1;
+            bottom: 0;
+            z-index: 1000;
+            animation-delay: 0s;
+        }
+        section .wave.wave2{
+            animation: animate2 15s linear infinite;
+            opacity: 0.5;
+            bottom: 10px;
+            z-index: 990;
+            animation-delay: -5s;
+        }
+        section .wave.wave3{
+            animation: animate2 30s linear infinite;
+            opacity: 0.2;
+            bottom: 15px;
+            z-index: 980;
+            animation-delay: -2s;
+        }
+        section .wave.wave4{
+            animation: animate2 5s linear infinite;
+            opacity: 0.7;
+            bottom: 20px;
+            z-index: 970;
+            animation-delay: -5s;
+        }
+        @keyframes animate{
+            0%{
+                background-position-x: 0;
+            }
+            100%{
+                background-position-x: 1000px;
+            }
+        }
+        @keyframes animate2{
+            0%{
+                background-position-x: 0;
+            }
+            100%{
+                background-position-x: -1000px;
+            }
+        }
+
+
+
+    </style>
+</body>

@@ -1,6 +1,6 @@
 .hamburger {
     width: 2rem;
-    height: 1.5rem;
+    height: 2rem;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
@@ -9,13 +9,13 @@
 }
 
 .line {
-    width: 1.5rem;
-    height: 0.2rem;
+    width: 2 rem;
+    height: 0.3rem;
     border-radius: 10px;
     background-color: black;
     transition: all 0.3s linear;
 }
 
 .hamburger:hover .line {
-    background-color: grey;
+    background-color: #5bcad8;
 }
