@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dropdown </title>
+<body><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZLCcT4kcQEz_ZRYGaap0xYtPU4fKOCBdRodNmw7uI8H7UsHHg5XAK8ZDwlHYnlE2Ut_NTn2ubyLpymIhXJqlXJPEdeRkBUR8riZoHza-7CQRL8TBJe3p4Wio4fOeAX6s2cB5cnySho_weervbJDYlfNY8s2uYhFCu6a8hoYOE24sGW1EvyKu0zm5BXgFdM0yJereDiqpk9KCs9Vp_ir1nLg532pGeyXM6LopuZE8QdQEqrJY3F5sGasZVdu3QQYVC5_VE_hTAE4nC3MW4748vQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvMTMyODYwODQ5NTY5OTc1OTExNC8xMzMwNDU3NjA3NTkyNDgwNzk5L2Ryb3Bkb3duLmh0bWw_ZXg9Njc4ZTBjYjQmaXM9Njc4Y2JiMzQmaG09YTEyZjRlMGNhZjg2MTA2NTFiOGUwYmNhMzQ1YzNmMTE3MGY4MzdlMzYwZjVlZmY2YTI3NzQ1YTc1NWJiYTlkZSY"/>
+    <div class="container">
+        <div class="question">
+            Input the medications the patient's currently taking, including name and dosage:
+        </div>
+        <input type="text" class="medications-input" placeholder="e.g., Aspirin 100mg daily">
+
+        <div class="nav-link" id="dropdownButton">
+            Select COC
+            <ul class="dropdown" id="dropdownMenu">
+                <li>Brevicon 0.5/35</li>
+                <li>Tri-Cira</li>
+                <li>Tri-Jordyna</li>
+                <li>Ovima</li>
+                <li>Portia</li>
+                <li>Triquilar</li>
+                <li>Zamine</li>
+                <li>Apri</li>
+                <li>Freya</li>
+                <li>Mirvala</li>
+                <li>Tricira-Lo</li>
+                <li>Linessa</li>
+                <li>Alysena</li>
+                <li>Aviane</li>
+                <li>Audrina</li>
+                <li>Mya</li>
+                <li>Lolo</li>
+            </ul>
+        </div>
+        <div class="selected-answer" id="selectedAnswer">Your selection will appear here</div>
+    </div>
+
+    <script>
+        // Toggle dropdown visibility on click
+        const dropdownButton = document.getElementById('dropdownButton');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        const selectedAnswer = document.getElementById('selectedAnswer');
+
+        dropdownButton.addEventListener('click', () => {
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target)) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+        // Update selected answer on click
+        dropdownMenu.querySelectorAll('li').forEach(item => {
+            item.addEventListener('click', (event) => {
+                selectedAnswer.textContent = `You selected: ${event.target.textContent}`;
+                dropdownMenu.style.display = 'none'; // Hide dropdown after selection
+            });
+        });
+    </script> 
+        <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #B2EBF2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+        }
+        .question {
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+        .medications-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .nav-link {
+            position: relative;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #7096D1;
+            color: black;
+            padding: 15px 30px;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .dropdown {
+            position: absolute;
+            top: 100%; /* Align below the button */
+            left: 0;
+            width: 100%;
+            background-color: #D0ECF0;
+            padding: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: none; /* Hidden by default */
+            z-index: 1000;
+        }
+        .dropdown li {
+            list-style: none;
+            padding: 8px 20px;
+            font-size: 14px;
+            color: black;
+            cursor: pointer;
+        }
+        .dropdown li:hover {
+            background-color: #7096D1;
+            color: white;
+            border-radius: 5px;
+        }
+        .selected-answer {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+
+        
+   
+</body>
+
