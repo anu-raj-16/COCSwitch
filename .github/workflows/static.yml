@@ -1,0 +1,49 @@
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on pushes to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger the workflow for pull requests targeting the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # This specifies that the workflow will run on the latest Ubuntu image
+
+    steps:
+      # Step 1: Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js (with the version you need)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Replace with the Node.js version you need, e.g., '14', '16', or '18'
+      
+      - name: Change Directory
+        run: cd ./cocswitch_app; ls -la
+        
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install  # Installs dependencies listed in package.json
+
+      # Step 4: Run tests
+      - name: Run tests
+        run: npm test  # Runs the tests (assuming you have a 'test' script defined in package.json)
+
+      # Step 5: Build the project (optional, depending on your setup)
+      - name: Build project
+        run: npm run build  # This is optional and depends on whether your project has a build script
+
+      # Step 6: Cache node_modules (optional, speeds up subsequent runs)
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
+
