@@ -11,10 +11,10 @@ function App() {
       <NavigationBar />
       <div className="app_container">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/form" element={<Form />} />
-          <Route path="/result" element={<Result />} />
+          <Route path="/COCSwitch/" element={<Home />} />
+          <Route path="/COCSwitch/about" element={<About />} />
+          <Route path="/COCSwitch/form" element={<Form />} />
+          <Route path="/COCSwitch/result" element={<Result />} />
         </Routes>
       </div>
     </>
