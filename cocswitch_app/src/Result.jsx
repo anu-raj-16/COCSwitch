@@ -17,9 +17,9 @@ function Result() {
 
     // Set the result based on the passed data
     if (result_med !== -1) {
-      setResult(`The medication to switch to is: ${result_med}.`);
+      setResult(`The medication to switch to is: ${result_med}`);
     } else {
-      setResult("There is currently no suitable COC replacement.");
+      setResult("There is currently no suitable COC replacement");
     }
   }, [result_med, navigate]);
 
@@ -28,7 +28,7 @@ function Result() {
   return (
     <>
       <div>
-        <header>Form Result:</header>
+        <header className="form_header">Form Result:</header>
         <div>
           <body className="matched_result">{result}</body>
         </div>

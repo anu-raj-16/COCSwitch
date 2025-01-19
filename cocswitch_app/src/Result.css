@@ -1,3 +1,18 @@
 .root {
     background-color: lightblue;
 }
+
+.form_header {
+    text-align: left;
+    margin-top: 15vh;
+    margin-left: 20vh;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.matched_result {
+    text-align: left;
+    margin-top: 5vh;
+    margin-left: 20vh;
+    font-size: 30px;
+}

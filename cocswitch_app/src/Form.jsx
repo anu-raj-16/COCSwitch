@@ -47,9 +47,11 @@ function Form() {
       if (newMed) {
         setNewMed(newMed);
         // Navigate to the result page and pass newMed.Name
+        sessionStorage.setItem("canAccessResult", "true");
         navigate("/result", { state: { result_med: newMed.Name } });
       } else {
         setNewMed(-1);
+        sessionStorage.setItem("canAccessResult", "true");
         // Navigate to the result page with -1 as the value indicating no suitable medication
         navigate("/result", { state: { result_med: -1 } });
       }
@@ -58,11 +60,16 @@ function Form() {
 
   return (
     <>
-      <form>
+      <form className="form_container">
+        <header className="form_header">Medication Switch Form</header>
+        <p>1. Select the symptom that the patient experiences</p>
         <SelectButton onValueChange={getChangedSymptom} />
+        <p>2. Select the medication the patient is currently taking</p>
         <DropDown onValueChange={getChangedMed} />
-
-        <button onClick={handleSubmit}> Submit </button>
+        <button className="submit_button" onClick={handleSubmit}>
+          {" "}
+          Submit{" "}
+        </button>
       </form>
     </>
   );

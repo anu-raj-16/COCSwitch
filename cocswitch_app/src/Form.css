@@ -1,0 +1,18 @@
+.form_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_header {
+    text-align: left;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.form_container .p {}
+
+.submit_button {
+    align-items: center;
+    width: 10%;
+}
