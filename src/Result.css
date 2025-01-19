@@ -1,0 +1,19 @@
+.root {
+    background-color: lightblue;
+}
+
+.result_header {
+    text-align: left;
+    margin-top: 15vh;
+    margin-left: 50vh;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.matched_result {
+    text-align: left;
+    margin-top: 5vh;
+    margin-left: 50vh;
+    font-size: 30px;
+    padding-bottom: 80px;
+}

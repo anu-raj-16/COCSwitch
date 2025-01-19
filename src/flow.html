@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Flow chart</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=3WOAJysoBtl4lQGs5iK3mOtCosV7xw4FilfbZUE-pqqzTdclAsTNNxNplQCk6_V3HQytEQEaOF3ec3WejR3mR67_yKFBK3lKUzG7UknqQwUVNgfnJ43uAVCnvz21cohF4Yj3hYJeWZONNi290SDBEHYFUzfCfiMfNhDI3brEl7FQhjbX8xvwVVRfGZqt2Ls-o2VQ4YHZOO_jP69_8IBuw3rcBPYB6sdrVKQau0PB8YlQKCOxWYvF95h6pGeJNClOjqmlogsbS2KD7ibbwHqzPA" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvMTMyODYwODQ5NTY5OTc1OTExNC8xMzMwNDU3Njc1NzkxNzI4NjcwL2Zsb3cuaHRtbD9leD02NzhlMGNjNCZpcz02NzhjYmI0NCZobT03OTUwODExZDEyZjJlMzU5MzUyMjliMTg4MTA1NmM3Y2U4ZGYyMWM3OTViMzk0YzI3YzYzY2IxZTMzNjk0ZmZkJg"/><div class="title">
+    <h1>How to utilize our service</h1>
+</div>
+<div class="timeline">
+    <div class="checkpoint">
+        <div>
+            <h2>Select patient's side effects</h2>
+            <p>Choose the symptoms the patient's experiencing </p>
+        </div>
+    </div>
+    <div class="checkpoint">
+        <div>
+            <h2>Choose current COC</h2>
+            <p>Input the medications the patient's currently taking, including name and dosage</p>
+        </div>
+    </div> 
+    <div class="checkpoint">
+        <div>
+            <h2>View results</h2>
+            <p>The given result is an apprpriate substitute medication</p>
+        </div>
+    </div> 
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Istok Web', sans-serif;
+            background-color: #5bcad8;
+            background-size: cover;
+            padding: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        h1{
+            margin: 0.3em;
+            font-size: 3em;
+        }
+        h2{
+            margin-bottom: 0.3em;
+        }
+        .title{
+            font: 1em arial;
+            text-align: center;
+            color:#081F5C ;
+        } 
+        .timeline{
+            max-width: 34.15em;
+            margin-top: 5em auto;
+        }
+        .checkpoint{
+            max-width: 34em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            position: relative;
+        }
+        .checkpoint div{
+            background-color: #D2DCEB;
+            border: 2px solid #007887;
+            border-radius: 1em;
+            border-width: 5px;
+            padding: 1em;
+        }
+        .checkpoint p{
+            line-height: 50px;
+            color: #081F5C;
+        }
+        .checkpoint:nth-child(odd){
+            border-left: 3px solid #007887;
+            transform: translateX(17em);
+            padding-left: 3em;
+        }
+        .checkpoint:nth-child(even){
+            border-right: 3px solid #007887;
+            transform: translateX(-17em);
+            padding-right: 3em;
+        }
+        .checkpoint:nth-child(odd)::before,.checkpoint:nth-child(even)::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin-top: -0.5em;
+            width: 3em;
+            height: 3px;
+            background-color: #007887;
+            transform: translateY(-50%);
+        }
+        .checkpoint:nth-child(odd)::before{
+            left: 0;
+        }
+        .checkpoint:nth-child(even)::before{
+            right: 0;
+        }
+        .checkpoint:nth-child(odd) div::before,.checkpoint:nth-child(even) div::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%;
+            background-color: #007887;
+            transform: translateY(-50%);
+            box-shadow: 0 0 0 0.5em #D2DCEB;
+        }
+        .checkpoint:nth-child(odd) div::before{
+            left: -0.5em;
+        }
+        .checkpoint:nth-child(even) div::before{
+            right: -0.5em;
+        }
+
+    </style>
