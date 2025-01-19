@@ -1,18 +1,32 @@
-import { useState } from "react";
-import NavigationBar from "./components/NavigationBar";
+import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./Result.css";
 
-function Result(props) {
+function Result() {
   const [result, setResult] = useState("");
-  if (props.result_med != -1) {
-    setResult("The medication to switch to is:" + props.result_med + ".");
-  } else {
-    setResult("There is currently no suitable COC replacement.");
-  }
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { result_med } = location.state || {};
+
+  useEffect(() => {
+    // Redirect to home if the required data isn't present
+    if (result_med === undefined) {
+      navigate("/");
+      return;
+    }
+
+    // Set the result based on the passed data
+    if (result_med !== -1) {
+      setResult(`The medication to switch to is: ${result_med}.`);
+    } else {
+      setResult("There is currently no suitable COC replacement.");
+    }
+  }, [result_med, navigate]);
+
+  if (result === "") return null; // Prevent rendering until data is processed
 
   return (
     <>
-      <NavigationBar />
       <div>
         <header>Form Result:</header>
         <div>
