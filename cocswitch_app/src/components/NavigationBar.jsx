@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import HamburgerMenu from "./HamburgerMenu";
 import "./NavigationBar.css";
 
@@ -10,22 +11,24 @@ function NavigationBar() {
   };
   const currentStatus = menuOpen ? "open" : "default";
   return (
-    <div className="navbar">
-      <div className="hamMenu" onClick={toggleMenuOpen}>
-        <HamburgerMenu />
+    <Router>
+      <div className="navbar">
+        <div className="hamMenu" onClick={toggleMenuOpen}>
+          <HamburgerMenu />
+        </div>
+        <ul className={currentStatus}>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/form">Form</Link>
+          </li>
+        </ul>
       </div>
-      <ul className={currentStatus}>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/form">Form</a>
-        </li>
-      </ul>
-    </div>
+    </Router>
   );
 }
 export default NavigationBar;
