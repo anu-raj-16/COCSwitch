@@ -12,6 +12,27 @@ function get_pt_med(pt_med_name) {
   return pt_med;
 }
 
+// gets all medications from meds_list that have lower estrogen levels than pt_estrogen
+function get_lower_estrogen(pt_estrogen, meds_list) {
+  pass;
+}
+
+// gets all medications from meds_list that have higher estrogen levels than pt_estrogen
+function get_lower_estrogen(pt_estrogen, meds_list) {
+  pass;
+}
+
+
+// gets all medications from meds_list that have same progestin activity as pt_progestin
+function get_lower_estrogen(pt_progestin, meds_list) {
+  pass;
+}
+
+
+// gets all medications from meds_list that have lower estrogen levels than pt_estrogen
+function get_lower_estrogen(pt_estrogen, meds_list) {
+  pass;
+}
 
 // must decrease estrogen content, maintain progestin activity level if possible
 function get_nausea_switch(pt_med_name) {
