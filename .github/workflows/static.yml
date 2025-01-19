@@ -22,7 +22,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'  # Replace with the Node.js version you need, e.g., '14', '16', or '18'
-
+      
+      - name: Change Directory
+        run: cd ./cocswitch_app
+        
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install  # Installs dependencies listed in package.json
