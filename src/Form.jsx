@@ -48,12 +48,12 @@ function Form() {
         setNewMed(newMed);
         // Navigate to the result page and pass newMed.Name
         sessionStorage.setItem("canAccessResult", "true");
-        navigate("/result", { state: { result_med: newMed.Name } });
+        navigate("/COCSwitch/result", { state: { result_med: newMed.Name } });
       } else {
         setNewMed("-1");
         sessionStorage.setItem("canAccessResult", "true");
         // Navigate to the result page with -1 as the value indicating no suitable medication
-        navigate("/result", { state: { result_med: "-1" } });
+        navigate("/COCSwitch/result", { state: { result_med: "-1" } });
       }
     }
   };
