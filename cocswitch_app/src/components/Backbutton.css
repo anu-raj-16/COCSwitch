@@ -1,3 +1,5 @@
 .back_button {
-    color: B2A6A6;
+    border: none;
+    background-color: #B2A6A6;
+    clip-path: polygon(100% 0, 100% 100%, 20% 100%, 0% 50%, 20% 0%);
 }
