@@ -1,5 +1,6 @@
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
+import "./NavigationBar.css";
 
 function NavigationBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -7,19 +8,24 @@ function NavigationBar() {
   const toggleMenuOpen = () => {
     setMenuOpen(!menuOpen);
   };
-
+  const currentStatus = menuOpen ? "open" : "default";
   return (
-    <nav>
-      <ul>
+    <div className="navbar">
+      <div className="hamMenu" onClick={toggleMenuOpen}>
+        <HamburgerMenu />
+      </div>
+      <ul className={currentStatus}>
         <li>
           <a href="/home">Home</a>
+        </li>
+        <li>
           <a href="/about">About</a>
+        </li>
+        <li>
           <a href="/symptoms">Symptoms</a>
         </li>
       </ul>
-      <div className="hamMenu" onClick={toggleMenuOpen}></div>
-      <HamburgerMenu />
-    </nav>
+    </div>
   );
 }
 export default NavigationBar;

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
+.hamMenu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: white;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: width 0.6s ease;
+}
+
+.closed {
+    width: 0;
+}
+
+.open {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.navbar ul li {
+    margin: 15px 0;
+    text-decoration: none;
+    font-family: 'Istok Web', sans-serif, black;
+}
+
+.navbar ul li:hover {
+    color: lightblue;
+}
