@@ -8,6 +8,12 @@ on:
     branches:
       - main  # Trigger the workflow for pull requests targeting the main branch
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest  # This specifies that the workflow will run on the latest Ubuntu image
