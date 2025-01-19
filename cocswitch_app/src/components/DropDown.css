@@ -16,6 +16,11 @@
 
 #dropdownButton {
   font-size: 22px;
+  background-color: #D0ECF0;
+  color: black;
+  border-color: #007887;
+  border-radius: 10px;
+  border-width: 2px;
 }
 
 #dropdownButton option {

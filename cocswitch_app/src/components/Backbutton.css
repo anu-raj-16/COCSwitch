@@ -1,11 +1,12 @@
 .back_button {
     cursor: pointer;
     border: none;
-    background-color: #B2A6A6;
+    background-color: #a9a09f;
     clip-path: polygon(100% 0, 100% 100%, 20% 100%, 0% 50%, 20% 0%);
-    margin-left: 15vh;
+    margin-left: 50vh;
+    margin-top: 5vh;
 }
 
 .back_button:active {
-    background-color: #635c5c;
+    background-color: #6e6767;
 }

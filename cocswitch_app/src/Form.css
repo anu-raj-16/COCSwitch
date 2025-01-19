@@ -19,4 +19,9 @@
 .submit_button {
     font-size: 20px;
     margin-top: 30px;
+    cursor: pointer;
+}
+
+.submit_button:active {
+    background-color: rgb(100, 99, 99);
 }
