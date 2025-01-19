@@ -16,13 +16,13 @@ function NavigationBar() {
       </div>
       <ul className={currentStatus}>
         <li>
-          <a href="/home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
           <a href="/about">About</a>
         </li>
         <li>
-          <a href="/symptoms">Symptoms</a>
+          <a href="/form">Form</a>
         </li>
       </ul>
     </div>
