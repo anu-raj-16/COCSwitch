@@ -6,6 +6,7 @@ function SelectButton(props) {
 
     const handleChange = (event) => {
         setSelectedValue(event.target.value);
+        props.onValueChange(event.target.value);
     };
 
     return (
@@ -43,15 +44,15 @@ function SelectButton(props) {
                 </label>
             </div>
             <div className="radio-group">
-                <label className={selectedValue === 'vesomotor' ? 'selected' : 'unselected'}>
+                <label className={selectedValue === 'vasomotor' ? 'selected' : 'unselected'}>
                     <input
                     type="radio"
                     name="symptom"
-                    value="vesomotor"
-                    checked={selectedValue === 'vesomotor'}
+                    value="vasomotor"
+                    checked={selectedValue === 'vasomotor'}
                     onChange={handleChange}
                     />
-                    Vesomotor
+                    Vasomotor
                 </label>
                 <label className={selectedValue === 'weight-gain' ? 'selected' : 'unselected'}>
                     <input
