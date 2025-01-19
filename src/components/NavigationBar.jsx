@@ -18,13 +18,13 @@ function NavigationBar() {
       <ul className={currentStatus}>
         <div className="nav_container">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/COCSwitch/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/COCSwitch/about">About</Link>
           </li>
           <li>
-            <Link to="/form">Form</Link>
+            <Link to="/COCSwitch/form">Form</Link>
           </li>
         </div>
       </ul>
