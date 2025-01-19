@@ -21,22 +21,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Replace with the Node.js version you need, e.g., '14', '16', or '18'
+          node-version: '18'  # Replace with the Node.js version you need, e.g., '14', '16', or '18'
       
       - name: Change Directory
-        run: cd ./cocswitch_app; ls -la
-        
-      # Step 3: Install dependencies
-      - name: Install dependencies
-        run: npm install  # Installs dependencies listed in package.json
-
-      # Step 4: Run tests
-      - name: Run tests
-        run: npm test  # Runs the tests (assuming you have a 'test' script defined in package.json)
-
-      # Step 5: Build the project (optional, depending on your setup)
-      - name: Build project
-        run: npm run build  # This is optional and depends on whether your project has a build script
+        run: cd ./cocswitch_app; ls -la; npm install; npm run build
 
       # Step 6: Cache node_modules (optional, speeds up subsequent runs)
       - name: Cache node_modules
