@@ -19,7 +19,7 @@
     transition: width 0.6s ease;
 }
 
-.container {
+.nav_container {
     top: 30px;
     position: relative;
 }

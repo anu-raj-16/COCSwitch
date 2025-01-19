@@ -16,7 +16,7 @@ function NavigationBar() {
         <HamburgerMenu />
       </div>
       <ul className={currentStatus}>
-        <div className="container">
+        <div className="nav_container">
           <li>
             <Link to="/">Home</Link>
           </li>
