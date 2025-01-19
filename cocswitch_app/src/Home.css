@@ -1,0 +1,117 @@
+.body {
+    margin: 0;
+    font: 1em sans-serif;
+    background-color: #81d5e0;
+    background-size: cover;
+    padding: 0;
+}
+
+.project_title {
+    font-size: 90px;
+    font-weight: 800;
+}
+
+.top_content {
+    text-align: left;
+    padding-top: 250px;
+    margin-left: 15vh;
+    padding-bottom: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 60px;
+}
+
+.header_home {
+    font-style: italic;
+    color: #494f5e;
+}
+
+.info {
+    text-align: left;
+    margin-top: 10vh;
+    max-width: 50%;
+    margin-left: 15vh;
+    z-index: 2000;
+    color: #081F5C;
+}
+
+.img {
+    background-image: url('./assets/doc.png');
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-top: -77vh;
+    margin-left: -9vh;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 998;
+}
+
+/* .section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('./assets/wave.png');
+}
+
+.section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    opacity: 1;
+    bottom: 0;
+    z-index: 1000;
+    animation-delay: 0s;
+} */
+
+/* .section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    opacity: 0.5;
+    bottom: 10px;
+    z-index: 990;
+    animation-delay: -5s;
+}
+
+.section .wave.wave3 {
+    animation: animate2 30s linear infinite;
+    opacity: 0.2;
+    bottom: 15px;
+    z-index: 980;
+    animation-delay: -2s;
+}
+
+.section .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    opacity: 0.7;
+    bottom: 20px;
+    z-index: 970;
+    animation-delay: -5s;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+} */
