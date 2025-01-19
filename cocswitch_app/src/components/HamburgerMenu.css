@@ -12,10 +12,10 @@
     width: 1.5rem;
     height: 0.2rem;
     border-radius: 10px;
-    background-color: grey;
+    background-color: black;
     transition: all 0.3s linear;
 }
 
 .hamburger:hover .line {
-    background-color: black;
+    background-color: grey;
 }

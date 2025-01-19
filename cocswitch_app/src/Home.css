@@ -1,0 +1,6 @@
+.title {
+    font-size: xx-large;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+}

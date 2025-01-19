@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HamburgerMenu from "./HamburgerMenu";
 import "./NavigationBar.css";
 
@@ -11,12 +11,12 @@ function NavigationBar() {
   };
   const currentStatus = menuOpen ? "open" : "default";
   return (
-    <Router>
-      <div className="navbar">
-        <div className="hamMenu" onClick={toggleMenuOpen}>
-          <HamburgerMenu />
-        </div>
-        <ul className={currentStatus}>
+    <div className="navbar">
+      <div className="hamMenu" onClick={toggleMenuOpen}>
+        <HamburgerMenu />
+      </div>
+      <ul className={currentStatus}>
+        <div className="container">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -26,9 +26,9 @@ function NavigationBar() {
           <li>
             <Link to="/form">Form</Link>
           </li>
-        </ul>
-      </div>
-    </Router>
+        </div>
+      </ul>
+    </div>
   );
 }
 export default NavigationBar;
