@@ -60,8 +60,8 @@ function Form() {
 
   return (
     <>
+      <header className="form_header">Medication Switch Form</header>
       <form className="form_container">
-        <header className="form_header">Medication Switch Form</header>
         <p>1. Select the symptom that the patient experiences</p>
         <SelectButton onValueChange={getChangedSymptom} />
         <p>2. Select the medication the patient is currently taking</p>

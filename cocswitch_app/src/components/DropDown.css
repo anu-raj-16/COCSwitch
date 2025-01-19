@@ -7,16 +7,29 @@
   align-items: center;
   padding-top: 50px;
 }
+
 .container {
   width: 80%;
   max-width: 600px;
+  height: 70%;
 }
+
+#dropdownButton {
+  font-size: 22px;
+}
+
+#dropdownButton option {
+  font-size: 22px;
+}
+
 .question {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: bold;
   color: #333;
 }
+
+
 .medications-input {
   width: 100%;
   padding: 10px;
@@ -25,6 +38,7 @@
   border-radius: 5px;
   margin-bottom: 20px;
 }
+
 .nav-link {
   position: relative;
   display: inline-block;
@@ -39,33 +53,39 @@
   text-align: center;
   box-sizing: border-box;
 }
+
 .dropdown {
   position: absolute;
-  top: 100%; /* Align below the button */
+  top: 100%;
+  /* Align below the button */
   left: 0;
   width: 100%;
   background-color: #D0ECF0;
   padding: 10px 0;
   border-radius: 5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   z-index: 1000;
 }
+
 .dropdown li {
   list-style: none;
   padding: 8px 20px;
-  font-size: 14px;
+  font-size: 25px;
   color: black;
   cursor: pointer;
 }
+
 .dropdown li:hover {
   background-color: #7096D1;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
 }
+
 .selected-answer {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
   color: #333;
 }

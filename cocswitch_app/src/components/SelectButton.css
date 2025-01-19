@@ -30,10 +30,11 @@ body {
     padding-right: 35px;
     padding-top: 2.5%;
     border-radius: 30px;
-  }
-  
-  .unselected {
-    background-color: #7096D1;
+}
+
+.unselected {
+    cursor: pointer;
+    background-color: #84a3d3;
     color: black;
     border: 2px solid #007887;
     padding-left: 35px;
@@ -41,4 +42,4 @@ body {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     border-radius: 30px;
-  }
+}

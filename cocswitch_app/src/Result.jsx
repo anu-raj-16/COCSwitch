@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./Result.css";
+import BackButton from "./components/BackButton";
 
 function Result() {
   const [result, setResult] = useState("");
@@ -17,7 +18,7 @@ function Result() {
 
     // Set the result based on the passed data
     if (result_med == "-1") {
-      setResult("There is currently no suitable COC replacement");
+      setResult("There is currently no suitable COC replacement.");
     } else {
       setResult(`The medication to switch to is: ${result_med}`);
     }
@@ -28,11 +29,12 @@ function Result() {
   return (
     <>
       <div>
-        <header className="form_header">Form Result:</header>
+        <header className="result_header">Form Result:</header>
         <div>
           <body className="matched_result">{result}</body>
         </div>
       </div>
+      <BackButton />
     </>
   );
 }

@@ -1,18 +1,22 @@
 .form_container {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .form_header {
-    text-align: left;
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 550;
+    text-align: center;
+    margin-top: 10vh;
 }
 
-.form_container .p {}
+.form_container p {
+    font-size: 25px;
+    margin-top: 5vh;
+}
 
 .submit_button {
-    align-items: center;
-    width: 10%;
+    font-size: 20px;
+    margin-top: 30px;
 }
