@@ -26,12 +26,12 @@ function Home() {
           </p>
           <p>This is where we step in.</p>
           <p>
-            Our innovative tool is designed to support clinicians in finding the
-            best birth control alternatives for their patients quickly and
-            accurately. By analyzing symptoms and current medications, Plan A
-            delivers recommendations that are tailored to the individual,
+            Our innovative tool is designed to support clinicians in finding
+            potential birth control alternatives for their patients quickly.
+            By analyzing symptoms and current medications, Plan A
+            delivers alternatives that are tailored to the individual,
             empowering clinicians to provide better care and enabling women to
-            experience fewer side effects. With Plan A, we’re not just
+            potentially experience fewer side effects. With Plan A, we’re not just
             streamlining a process, we’re enhancing lives. We believe that
             personalized, timely healthcare should be accessible to everyone,
             and we’re committed to helping clinicians provide the care that

@@ -60,9 +60,9 @@ function Form() {
 
   return (
     <>
-      <header className="form_header">Medication Switch Form</header>
+      <header className="form_header">Medication Alternative Form</header>
       <form className="form_container">
-        <p>1. Select the symptom that the patient experiences</p>
+        <p>1. Select the symptom that the patient is experiencing due to current COC</p>
         <SelectButton onValueChange={getChangedSymptom} />
         <p>2. Select the medication the patient is currently taking</p>
         <DropDown onValueChange={getChangedMed} />

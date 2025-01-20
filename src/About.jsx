@@ -19,14 +19,14 @@ function About() {
           <div className="checkpoint">
             <div>
               <h2>Select patient`s side effects</h2>
-              <p>Choose the symptoms the patient`s experiencing </p>
+              <p>Choose the symptoms the patient`s experiencing due to current COC</p>
             </div>
           </div>
           <div className="checkpoint">
             <div>
               <h2>Choose current COC</h2>
               <p>
-                Input the medications the patient`s currently taking, including
+                Input the medication the patient`s currently taking, including
                 name and dosage
               </p>
             </div>
@@ -34,7 +34,7 @@ function About() {
           <div className="checkpoint">
             <div>
               <h2>View results</h2>
-              <p>The given result is an apprpriate substitute medication</p>
+              <p>The given result is a potentially appropriate substitute medication</p>
             </div>
           </div>
         </div>
