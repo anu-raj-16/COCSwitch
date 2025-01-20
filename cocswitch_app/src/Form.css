@@ -25,3 +25,11 @@
 .submit_button:active {
     background-color: rgb(100, 99, 99);
 }
+
+.disclaimer-form {
+  text-align: left;
+  margin-left: 35vh;
+  margin-right: 20vh;
+  font-size: 15px;
+  padding-top: 30px;
+}

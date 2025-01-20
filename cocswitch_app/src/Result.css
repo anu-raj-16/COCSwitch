@@ -17,3 +17,12 @@
     font-size: 30px;
     padding-bottom: 80px;
 }
+
+.disclaimer-result {
+  text-align: left;
+  margin-top: 15vh;
+  margin-left: 50vh;
+  margin-right: 20vh;
+  font-size: 15px;
+  padding-bottom: 80px;
+}

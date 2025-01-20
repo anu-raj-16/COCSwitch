@@ -1,3 +1,8 @@
+/* This website is a proof of concept for a hackathon and is not intended for medical use.
+The content and logic displayed in this file are purely fictional and for entertainment purposes only,
+and should not be construed as medical advice in any way. Always consult a licensed healthcare
+professional for medical decisions. */
+
 // HELPER FUNCTIONS
 
 import {all_meds} from "./contraception_data.js";

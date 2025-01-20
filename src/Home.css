@@ -48,6 +48,14 @@
     z-index: 998;
 }
 
+.disclaimer-main-page {
+  text-align: left;
+  margin-left: 15vh;
+  margin-right: 20vh;
+  font-size: 15px;
+  padding-top: -20px;
+}
+
 /* .section {
     position: relative;
     width: 100%;

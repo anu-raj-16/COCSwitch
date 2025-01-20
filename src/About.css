@@ -90,3 +90,11 @@
     left: -2.5em;
     /* Dot alignment for odd checkpoints */
 }
+
+.disclaimer-about-page {
+  text-align: left;
+  margin-left: 35vh;
+  margin-right: 20vh;
+  font-size: 15px;
+  padding-top: 30px;
+}

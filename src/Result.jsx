@@ -31,10 +31,16 @@ function Result() {
       <div>
         <header className="result_header">Form Result:</header>
         <div>
-          <body className="matched_result">{result}</body>
+          <body className="matched_result">{result}*</body>
         </div>
       </div>
       <BackButton />
+    <footer className="disclaimer-result">
+      *This website is a proof of concept for a hackathon and is not intended for medical use.
+The content displayed on this page is purely fictional and for entertainment purposes only,
+and should not be construed as medical advice in any way. Always consult a licensed healthcare
+professional for medical decisions.
+    </footer>
     </>
   );
 }
